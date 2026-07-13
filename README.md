@@ -9,6 +9,8 @@ A simple and interactive **Rock Paper Scissors** web application built using **F
 ---
 
 ## 📸 Screenshots
+<img width="1077" height="830" alt="image" src="https://github.com/user-attachments/assets/6df092a5-56a3-4235-bbe8-2020d7517845" />
+
 
 > Add screenshots of your application here.
 
