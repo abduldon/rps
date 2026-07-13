@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    
+<div class="container">
+    <h1>🎮 Rock Paper Scissors</h1>
+    <h2>choose your move</h2>
+    <form action="/play" method="POST">
+        <button type="submit" name="choice" value="rock">
+            🪨 Rock
+        </button>
+
+        <button type="submit" name="choice" value="paper">
+            📄 Paper
+        </button>
+
+        <button type="submit" name="choice" value="scissors">
+            ✂️ Scissors
+        </button>
+
+    </form>
+    <div class="score">
+        <h3>score board</h3>
+
+        <p>🏆 Wins : {{ session.wins }}</p>
+        <p>❌ Losses : {{ session.loses }}</p>
+        <p>🤝 Draws : {{ session.ties }}</p>
+
+        <form action="/reset" method="GET" style="margin-top: 1rem;">
+            <button type="submit">Reset Score</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

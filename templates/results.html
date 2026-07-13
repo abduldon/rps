@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <body>
+        <div class="container">
+            <h1></h1>
+            <h2>computer chose</h2>
+            <h3>{{computer}}</h3>
+            <h1>{{result}}</h1>
+
+            <div class="score">
+                <h3>score board</h3>
+                <p>🏆 wins : {{ session.wins }}</p>
+                <p>❌ losses : {{ session.losses }}</p>
+                <p>🤝 Draws : {{ session.draws }}</p>
+            </div>
+            <a href="{{url_for('home')}}">
+                play again
+            </a>
+            
+        </div>
+    </body>
+</head>
+</html>
